@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="icon" href="src/logo/logo.png">
+    <link rel="stylesheet" href="src/css/nav-bar.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -62,7 +64,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
                         <li ><a href="profile.html">Profile</a></li>
-                        <li  href="image.html"><a href="#">Image</a></li>
+                        <li ><a  href="image.html">Image</a></li>
                         <li class="active"><a href="video.html">Video</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="about.html">About</a></li>
@@ -79,62 +81,73 @@
             <iframe id="to" src="https://www.youtube.com/embed/gqhWHy0rrtM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <h2 id="header">
                 [MV] BTS(방탄소년단)_ We Are Bulletproof Pt2(위 아 불렛프루프 Pt.2)
-                <div class="ui heart rating" data-rating="1" data-max-rating="5" style="float:right"></div>
+                <div class="ui heart rating" data-rating="4" data-max-rating="5" style="float:right"></div>
             </h2>
         </div>
         <div class="col-sm-3" id="nho">
         </div>
     </div>
     <script type="text/javascript">
+    $(' .rating').rating({});
     var listVideo =[
         {
             title: '[MV] BTS(방탄소년단) _ DOPE(쩔어)',
-            srcImg: 'src/video/dope.webp',
+            srcImg: 'src/coverImg/dope.webp',
+            srcGif: 'src/coverGif/dope.webp',
             srcVideo: 'https://www.youtube.com/embed/BVwAVbKYYeM'
         },
         {
             title: '[MV] BTS(방탄소년단) _ I NEED U',
-            srcImg: 'src/video/I need you.webp',
+            srcImg: 'src/coverImg/I need you.webp',
+            srcGif: 'src/coverGif/I need you.webp',
             srcVideo: 'https://www.youtube.com/embed/NMdTd9e-LEI'
         },
         {
             title:'[MV] BTS(방탄소년단) _ Boy In Luv(상남자)',
-            srcImg: 'src/video/boy in luv.webp',
+            srcImg: 'src/coverImg/boy in luv.webp',
+            srcGif: 'src/coverGif/boy in luv.webp',
             srcVideo: 'https://www.youtube.com/embed/m8MfJg68oCs'
         },
         {
             title:'[MV] BTS(방탄소년단) _ War of Hormone(호르몬 전쟁)',
-            srcImg: 'src/video/War of hormone.webp',
+            srcImg: 'src/coverImg/War of hormone.webp',
+            srcGif: 'src/coverGif/War of hormone.webp',
             srcVideo: 'https://www.youtube.com/embed/XQmpVHUi-0A'
         },
         {
             title:'[MV] BTS(방탄소년단) _ Just One Day(하루만)',
-            srcImg: 'src/video/Just One Day.webp',
+            srcImg: 'src/coverImg/War of hormone.webp',
+            srcGif: 'src/coverGif/War of hormone.webp',
             srcVideo: 'https://www.youtube.com/embed/DTcKkcyS410'
         },
         {
             title:'[MV] BTS(방탄소년단) _ Danger',
-            srcImg: 'src/video/Danger.webp',
+            srcImg: 'src/coverImg/Danger.webp',
+            srcGif: 'src/coverGif/Danger.webp',
             srcVideo: 'https://www.youtube.com/embed/bagj78IQ3l0'
         },
         {
             title:'BTS(방탄소년단) 가요대제전 Intro performance Trailer',
-            srcImg: 'src/video/performance.webp',
+            srcImg: 'src/coverImg/performance.webp',
+            srcGif: 'src/coverGif/performance.webp',
             srcVideo: 'https://www.youtube.com/embed/hoTBL39i60M'
         },
         {
             title:'[MV] BTS(방탄소년단) _ No More Dream (Dance ver.)',
-            srcImg: 'src/video/No More Dream.webp',
+            srcImg: 'src/coverImg/No More Dream.webp',
+            srcGif: 'src/coverGif/No More Dream.webp',
             srcVideo: 'https://www.youtube.com/embed/pUkViXyQTI4'
         },
         {
             title:'[MV] BTS(방탄소년단) _ N.O(엔.오)',
-            srcImg: 'src/video/NO.webp',
+            srcImg: 'src/coverImg/No More Dream.webp',
+            srcGif: 'src/coverGif/No More Dream.webp',
             srcVideo: 'https://www.youtube.com/embed/mmgxPLLLyVo'
         },
         {
             title: "BTS (防弾少年団) 'FOR YOU' Official MV",
-            srcImg: 'src/video/for you.webp',
+            srcImg: 'src/coverImg/for you.webp',
+            srcGif: 'src/coverGif/for you.webp',
             srcVideo: 'https://www.youtube.com/embed/TTG6nxwdhyA'
         }
     ]
@@ -151,6 +164,8 @@
         myImg.title = listVideo[i].title;
         myImg.src = listVideo[i].srcImg;
         myImg.alt = listVideo[i].srcVideo;
+        myImg.setAttribute("srcgif", listVideo[i].srcGif);
+        myImg.setAttribute("srcimg", listVideo[i].srcImg);
 
         var mySpan = document.createElement("p");
         mySpan.innerHTML = listVideo[i].title;
@@ -159,6 +174,24 @@
             var myVideo  = document.getElementById("to");
             myVideo.src = event.target.alt;
             document.getElementById("header").innerHTML=event.target.title;
+            // <div class="ui heart rating" data-rating="1" data-max-rating="5" style="float:right"></div>
+            var myRating = document.createElement("div");
+
+            myRating.className = 'ui heart rating';
+            myRating.setAttribute('data-rating',"4");
+            myRating.setAttribute('data-max-rating',"5");
+            myRating.style ='float:right';
+            document.getElementById("header").appendChild(myRating);
+            $(' .rating').rating({});
+
+        }
+        myImg.onmouseover = function (event) {
+            var myTarget = event.target.getAttribute('srcgif');
+            event.target.setAttribute('src', myTarget);
+        }
+        myImg.onmouseout = function (event) {
+            var myTarget = event.target.getAttribute('srcimg');
+            event.target.setAttribute('src', myTarget);
         }
         parentDIV.appendChild(myImg);
         parentDIV.appendChild(mySpan);

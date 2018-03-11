@@ -1,0 +1,8 @@
+.nav-bar {
+    background: black;
+}
+
+#myNavbar ul li{
+    margin-right: 20px;
+    text-transform: capitalize;
+}
