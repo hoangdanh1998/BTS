@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="icon" href="src/logo/logo.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="src/css/appear.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
+
+    <style media="screen">
+    BODY{
+        background: url(src/img/background/bg.png);
+        background-color: oldlace;
+        animation: lunglinh 10s infinite alternate;
+
+    }
+    #myDiv img{
+        width: 100%;
+        transition: transform 0.5s;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+    #myDiv img:hover{
+        transform: scale(1.1);
+
+    }
+    #myDiv{padding-top: 50px;}
+    #myDiv .contain {
+        border-radius: 10%;
+        padding: 5px;
+        overflow: hidden;
+        width: 100%;
+    }
+    @keyframes lunglinh {
+        from { background-position: 0 0; }
+        to { background-position: 300px -300px; }
+    }
+    .flex-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    </style>
+    <link rel="stylesheet" href="src/css/nav-bar.css">
+</head>
+<body>
+    <div class="nav-bar navbar-fixed-top">
+        <nav class="navbar navbar-default" style="margin:0px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-size:35px; "> <img src="src/logo/logo.png" style="height:100%; " alt=""> </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="bts.html">Home</a></li>
+                        <li ><a href="Profile.html">Profile</a></li>
+                        <li class="active" href="image.html"><a href="#">Image</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row flex-row"id="myDiv">
+        <div class="col-md-2 col-sm-4 col-xs-6" id='d1'></div>
+        <div class="col-md-2 col-sm-4 col-xs-6" id="d2"></div>
+        <div class="col-md-2 col-sm-4 col-xs-6" id="d3"></div>
+        <div class="col-md-2 col-sm-4 col-xs-6" id="d4"></div>
+        <div class="col-md-2 col-sm-4 col-xs-6" id="d5"></div>
+        <div class="col-md-2 col-sm-4 col-xs-6" id="d6"></div>
+    </div>
+
+    <script type="text/javascript">
+    var arr = [
+        'src/img/j-Hope/1-1.jpg',
+        'src/img/j-Hope/3.jpg',
+        'src/img/j-Hope/4.jpg',
+        'src/img/j-Hope/5.jpg',
+        'src/img/j-Hope/6.jpg',
+        'src/img/j-Hope/7.jpg',
+        'src/img/j-Hope/8.jpg',
+        'src/img/j-Hope/9.jpg',
+        'src/img/j-Hope/10.jpg',
+        'src/img/jimin/1.jpg',
+        'src/img/jimin/2.jpg',
+        'src/img/jimin/3.jpg',
+        'src/img/jimin/4.jpg',
+        'src/img/jimin/5.jpg',
+        'src/img/jimin/6.png',
+        'src/img/jimin/7.jpg',
+        'src/img/jimin/9.jpg',
+        'src/img/jin/1.jpg',
+        'src/img/jin/2.jpg',
+        'src/img/jin/3.jpg',
+        'src/img/jin/4.jpg',
+        'src/img/jin/5.jpg',
+        'src/img/jin/6.jpg',
+        'src/img/jin/7.jpg',
+        'src/img/jin/8.jpg',
+        'src/img/jin/9.jpg',
+        'src/img/JungKook/1.jpg',
+        'src/img/JungKook/3.jpg',
+        'src/img/JungKook/4.jpg',
+        'src/img/JungKook/5.jpg',
+        'src/img/JungKook/jungkook.jpg',
+        'src/img/JungKook/10.jpg',
+        'src/img/Jimin/jimin.jpg',
+        'src/img/JungKook/8.jpg',
+        'src/img/JungKook/6.jpg',
+        'src/img/JungKook/9.jpeg'
+    ]
+    var myDiv = document.getElementById("myDiv");
+    for (var i = 0; i < arr.length; i++){
+        var myChildDiv = myDiv.getElementsByTagName('div')[i % 6];
+        var myAmazingDiv = document.createElement("p");
+        myAmazingDiv.className = "contain";
+        var myImg = document.createElement("img");
+        myImg.src = arr[i];
+        myAmazingDiv.appendChild(myImg);
+        myChildDiv.appendChild(myAmazingDiv);
+    }
+    </script>
+
+<div class="" style="text-align: center;">
+
+    <i class="large spinner loading icon" style="margin:auto auto;"></i>
+</div>
+</body>
+</html>

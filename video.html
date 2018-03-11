@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="icon" href="src/logo/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="src/css/appear.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.js"></script>
+
+    <style media="screen">
+    body {
+        background: oldlace;
+    }
+    #nho{
+        float: right;
+    }
+
+    .lon{
+        /* border: solid 1px blue; */
+        /* height: 90vh; */
+        position: fixed;
+    }
+    #to{
+        height: 70vh;
+        width: 100%;
+    }
+    #nho p {
+        display: inline-block;
+        margin: 0;
+        font-weight: bold;
+    }
+    .content {
+        padding-top: 60px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .lon {
+            position: static;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="nav-bar navbar-fixed-top">
+        <nav class="navbar navbar-default" style="margin:0px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-size:35px; "> <img src="src/logo/logo.png" style="height:100%; " alt=""> </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="bts.html">Home</a></li>
+                        <li ><a href="Profile.html">Profile</a></li>
+                        <li  href="image.html"><a href="#">Image</a></li>
+                        <li class="active"><a href="video.html">Video</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row content">
+        <div class="col-sm-9 lon">
+            <iframe id="to" src="https://www.youtube.com/embed/gqhWHy0rrtM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <h2 id="header">
+                [MV] BTS(방탄소년단)_ We Are Bulletproof Pt2(위 아 불렛프루프 Pt.2)
+                <div class="ui heart rating" data-rating="1" data-max-rating="5" style="float:right"></div>
+            </h2>
+        </div>
+        <div class="col-sm-3" id="nho">
+        </div>
+    </div>
+    <script type="text/javascript">
+    var listVideo =[
+        {
+            title: '[MV] BTS(방탄소년단) _ DOPE(쩔어)',
+            srcImg: 'src/video/dope.webp',
+            srcVideo: 'https://www.youtube.com/embed/BVwAVbKYYeM'
+        },
+        {
+            title: '[MV] BTS(방탄소년단) _ I NEED U',
+            srcImg: 'src/video/I need you.webp',
+            srcVideo: 'https://www.youtube.com/embed/NMdTd9e-LEI'
+        },
+        {
+            title:'[MV] BTS(방탄소년단) _ Boy In Luv(상남자)',
+            srcImg: 'src/video/boy in luv.webp',
+            srcVideo: 'https://www.youtube.com/embed/m8MfJg68oCs'
+        },
+        {
+            title:'[MV] BTS(방탄소년단) _ War of Hormone(호르몬 전쟁)',
+            srcImg: 'src/video/War of hormone.webp',
+            srcVideo: 'https://www.youtube.com/embed/XQmpVHUi-0A'
+        },
+        {
+            title:'[MV] BTS(방탄소년단) _ Just One Day(하루만)',
+            srcImg: 'src/video/Just One Day.webp',
+            srcVideo: 'https://www.youtube.com/embed/DTcKkcyS410'
+        },
+        {
+            title:'[MV] BTS(방탄소년단) _ Danger',
+            srcImg: 'src/video/Danger.webp',
+            srcVideo: 'https://www.youtube.com/embed/bagj78IQ3l0'
+        },
+        {
+            title:'BTS(방탄소년단) 가요대제전 Intro performance Trailer',
+            srcImg: 'src/video/performance.webp',
+            srcVideo: 'https://www.youtube.com/embed/hoTBL39i60M'
+        },
+        {
+            title:'[MV] BTS(방탄소년단) _ No More Dream (Dance ver.)',
+            srcImg: 'src/video/No More Dream.webp',
+            srcVideo: 'https://www.youtube.com/embed/pUkViXyQTI4'
+        },
+        {
+            title:'[MV] BTS(방탄소년단) _ N.O(엔.오)',
+            srcImg: 'src/video/NO.webp',
+            srcVideo: 'https://www.youtube.com/embed/mmgxPLLLyVo'
+        },
+        {
+            title: "BTS (防弾少年団) 'FOR YOU' Official MV",
+            srcImg: 'src/video/for you.webp',
+            srcVideo: 'https://www.youtube.com/embed/TTG6nxwdhyA'
+        }
+    ]
+
+    var parentDIV = document.getElementById("nho");
+    for (var i = 0; i < listVideo.length; ++i) {
+
+
+        var myChildDiv = document.createElement("div");
+        myChildDiv.className = "ui divider";
+
+        var myImg = document.createElement("img");
+        myImg.className = "ui middle aligned medium image";
+        myImg.title = listVideo[i].title;
+        myImg.src = listVideo[i].srcImg;
+        myImg.alt = listVideo[i].srcVideo;
+
+        var mySpan = document.createElement("p");
+        mySpan.innerHTML = listVideo[i].title;
+
+        myImg.onclick = function(event) {
+            var myVideo  = document.getElementById("to");
+            myVideo.src = event.target.alt;
+            document.getElementById("header").innerHTML=event.target.title;
+        }
+        parentDIV.appendChild(myImg);
+        parentDIV.appendChild(mySpan);
+        parentDIV.appendChild(myChildDiv);
+    }
+    </script>
+</body>
+</html>
