@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="src/css/appear.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
 
     <style media="screen">
     BODY{
@@ -19,6 +19,10 @@
         background-color: oldlace;
         animation: lunglinh 10s infinite alternate;
 
+    }
+    @keyframes lunglinh {
+        from { background-position: 0 0; }
+        to { background-position: 300px -300px; }
     }
     #myDiv img{
         width: 100%;
@@ -37,10 +41,6 @@
         padding: 5px;
         overflow: hidden;
         width: 100%;
-    }
-    @keyframes lunglinh {
-        from { background-position: 0 0; }
-        to { background-position: 300px -300px; }
     }
     .flex-row{
     display: flex;
@@ -66,7 +66,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
                         <li ><a href="profile.html">Profile</a></li>
-                        <li class="active" href="image.html"><a href="#">Image</a></li>
+                        <li class="active" ><a href="image.html">Image</a></li>
                         <li><a href="video.html">Video</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="about.html">About</a></li>
@@ -89,13 +89,12 @@
 
     <script type="text/javascript">
     var arr = [
-        'src/img/j-Hope/1-1.jpg',
-        'src/img/j-Hope/3.jpg',
         'src/img/j-Hope/4.jpg',
         'src/img/j-Hope/5.jpg',
         'src/img/j-Hope/6.jpg',
         'src/img/j-Hope/7.jpg',
         'src/img/j-Hope/8.jpg',
+        'src/img/j-Hope/1-1.jpg',
         'src/img/j-Hope/9.jpg',
         'src/img/j-Hope/10.jpg',
         'src/img/jimin/1.jpg',
@@ -124,7 +123,33 @@
         'src/img/Jimin/jimin.jpg',
         'src/img/JungKook/8.jpg',
         'src/img/JungKook/6.jpg',
-        'src/img/JungKook/9.jpeg'
+        'src/img/RM/1.jpg',
+        'src/img/RM/2.jpg',
+        'src/img/RM/3.jpg',
+        'src/img/RM/4.jpg',
+        'src/img/RM/5.jpg',
+        'src/img/RM/7.jpg',
+        'src/img/RM/8.jpg',
+        'src/img/RM/9.png',
+        'src/img/JungKook/9.jpeg',
+        'src/img/Suga/1.jpg',
+        'src/img/Suga/2.jpg',
+        'src/img/Suga/3.jpg',
+        'src/img/Suga/4.jpg',
+        'src/img/Suga/5.jpg',
+        'src/img/Suga/8.jpg',
+        'src/img/Suga/7.jpg',
+        'src/img/RM/10.jpg',
+        'src/img/V/1.jpg',
+        'src/img/V/2.jpg',
+        'src/img/V/3.jpg',
+        'src/img/V/4.jpg',
+        'src/img/V/5.jpg',
+        'src/img/V/7.jpg',
+        'src/img/V/6.jpg',
+        'src/img/V/9.jpg',
+        'src/img/Suga/10.png',
+        'src/img/V/8.jpg'
     ]
     var myDiv = document.getElementById("myDiv");
     for (var i = 0; i < arr.length; i++){
