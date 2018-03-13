@@ -49,7 +49,7 @@
     }
 
     .sidenav a:hover {
-        color: #f1f1f1;
+        color: black;
     }
 
     .sidenav .closebtn {
@@ -76,16 +76,15 @@
         width:60%;
          margin:auto;
     }
-    BODY{
-        background: url(src/img/background/bg.png);
-        background-color: oldlace;
-        animation: lunglinh 10s infinite alternate;
-
-    }
     @media only screen and (max-width: 767px) {
         .noidung {
             width: 100%;
         }
+    }
+    BODY{
+        background: url(src/img/background/bg.png);
+        background-color: oldlace;
+        animation: lunglinh 10s infinite alternate;
 
     }
     @keyframes lunglinh {
@@ -132,6 +131,8 @@
             <div id="mySidenav" class="sidenav" >
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <img src="src/img/background/icon.jpg" style="width:130px; height:130px; left:20px;" alt="">
+                <a href="profile.html">Profile</a>
+
                 <a href="profile.html#suga">Suga</a>
                 <a href="profile.html#jungkook">JungKook</a>
                 <a href="profile.html#v">V</a>
@@ -141,11 +142,8 @@
                 <a href="profile.html#jhope">J-Hope</a>
             </div>
             <div class="noidung" >
-
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; List Idol</span>
                 <div class="">
-
-
                     <div class="" id="nhom">       </div>
                     <div class="" id="v">
                     <h1>Thông tin thành viên</h1>
