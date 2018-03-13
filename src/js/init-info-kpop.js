@@ -186,15 +186,15 @@ var info = [
             {
                 title:'Thông tin cá nhân: RM',
                 content:[
-                "Tên thật : Kim Nam Joon",
-"Biệt danh : RapMon, Leader Mon, Ráp Mông, Dập Mông",
-"Ngày sinh : 12/09/1994 —> Xử Nữ",
-"Vị trí : Leader, Lead Rapper",
-"Nhóm máu : A",
-"Chiều cao : 181 cm (cao nhất nhóm)",
-"Cân nặng : 64 kg (nặng nhất nhóm)",
-"Gia đình : Bố, mẹ, em gái",
-"Số yêu thích : 1"
+                    "Tên thật : Kim Nam Joon",
+                    "Biệt danh : RapMon, Leader Mon, Ráp Mông, Dập Mông",
+                    "Ngày sinh : 12/09/1994 —> Xử Nữ",
+                    "Vị trí : Leader, Lead Rapper",
+                    "Nhóm máu : A",
+                    "Chiều cao : 181 cm (cao nhất nhóm)",
+                    "Cân nặng : 64 kg (nặng nhất nhóm)",
+                    "Gia đình : Bố, mẹ, em gái",
+                    "Số yêu thích : 1"
 
                 ]
             },
@@ -202,16 +202,16 @@ var info = [
                 title:'Fun Facts',
                 content:[
                     "Tự học tiếng Anh.",
-"Thích đi uống cafe để tìm cảm hứng.",
-"Thích lướt web, thích thời tiết trong lành.",
-"Công khai ủng hộ quyền lợi của LGBT.",
-"Đã sáng tác/ viết hơn 100 bài hát.",
-"Suga và RapMon rất thích viết lyric cho các bài hát của BTS, nhưng các thành viên khác cũng sẽ giúp họ viết.",
-"RapMon từng nói rằng khi anh ấy còn ở trong Mix Tape, có fan đã hét lên 'Rap Monster' nên anh đã dùng nó làm nghệ danh.",
-"RapMon bắt đầu tập viết lyric khi anh đang đi học vào vở của mình.",
-"Fan muốn RapMon tháo kính ra, anh trả lời rằng sẽ làm vậy khi nào anh có kiểu tóc đẹp hơn.",
-"RapMon chọn J-Hope để hẹn hò nếu RapMon là con gái vì J-Hope giống như “bà mẹ” của cả nhóm vậy.",
-"Khi các thành viên BTS được hỏi 'Ai là thành viên nam tính nhất của BTS ?', đa số đã chọn RapMon."
+                    "Thích đi uống cafe để tìm cảm hứng.",
+                    "Thích lướt web, thích thời tiết trong lành.",
+                    "Công khai ủng hộ quyền lợi của LGBT.",
+                    "Đã sáng tác/ viết hơn 100 bài hát.",
+                    "Suga và RapMon rất thích viết lyric cho các bài hát của BTS, nhưng các thành viên khác cũng sẽ giúp họ viết.",
+                    "RapMon từng nói rằng khi anh ấy còn ở trong Mix Tape, có fan đã hét lên 'Rap Monster' nên anh đã dùng nó làm nghệ danh.",
+                    "RapMon bắt đầu tập viết lyric khi anh đang đi học vào vở của mình.",
+                    "Fan muốn RapMon tháo kính ra, anh trả lời rằng sẽ làm vậy khi nào anh có kiểu tóc đẹp hơn.",
+                    "RapMon chọn J-Hope để hẹn hò nếu RapMon là con gái vì J-Hope giống như “bà mẹ” của cả nhóm vậy.",
+                    "Khi các thành viên BTS được hỏi 'Ai là thành viên nam tính nhất của BTS ?', đa số đã chọn RapMon."
                 ]
             }
         ]
@@ -224,16 +224,16 @@ var info = [
                 title:'Thông tin cá nhân: JungKook',
                 content:[
                     "Tên thật : Jeon Jungkook",
-"Biệt danh : Golden Maknae, Cúc-ki, Cúc, Kookie",
-"Ngày sinh : 01/09/1997 —-> Xử Nữ",
-"Vị trí : Main Vocalist, Main Dancer, Rapper, Maknae.",
-"Nhóm máu : A",
-"Sở trường : Vẽ",
-"Màu yêu thích : Đỏ",
-"Số yêu thích : 1",
-"Chiều cao : 178 cm",
-"Cân nặng : 61 kg",
-"Gia đình : bố, mẹ, anh trai"
+                    "Biệt danh : Golden Maknae, Cúc-ki, Cúc, Kookie",
+                    "Ngày sinh : 01/09/1997 —-> Xử Nữ",
+                    "Vị trí : Main Vocalist, Main Dancer, Rapper, Maknae.",
+                    "Nhóm máu : A",
+                    "Sở trường : Vẽ",
+                    "Màu yêu thích : Đỏ",
+                    "Số yêu thích : 1",
+                    "Chiều cao : 178 cm",
+                    "Cân nặng : 61 kg",
+                    "Gia đình : bố, mẹ, anh trai"
 
                 ]
             },
@@ -241,21 +241,37 @@ var info = [
                 title:'Fun Facts',
                 content:[
                     "Năm 2012, Jungkook theo học LA Summer Of 2012 cho khóa huấn luyện tương tự Movement Lifestyle (một học viên nhảy nổi tiếng)",
-"Thích thời tiết có nắng và gió mát",
-"Jungkook sợ hãi khi các hyung bắt cậu làm các động tác dễ thương",
-"Trong ngày Valentine, Jungkook nói rằng cậu nhận được chocolate từ 2 cô gái",
-"Sở thích là Dancing và Skateboarding.",
-"Jungkook được khen về kĩ năng nhảy của cậu bởi một dancer nổi tiếng rằng cậu giỏi như Kyle Hanagami (nhảy chính đứng thứ 3 của nhóm, sau J-Hope thứ nhất và Jimin thứ hai).",
-"Jungkook với tư cách là maknae luôn chiếm thời gian lâu nhất trong phòng tắm.",
-"Jungkook khi được yêu cầu chọn ra mem thích nhất trong nhóm, cả Jimin và J-Hope đều làm kí hiệu tự chỉ vào mình, nhưng Jungkook không đưa ra câu trả lời.",
- "Giống như Suga, Jungkook nói rằng cậu sẽ hẹn hò với Jin nếu em ấy là con gái."
+                    "Thích thời tiết có nắng và gió mát",
+                    "Jungkook sợ hãi khi các hyung bắt cậu làm các động tác dễ thương",
+                    "Trong ngày Valentine, Jungkook nói rằng cậu nhận được chocolate từ 2 cô gái",
+                    "Sở thích là Dancing và Skateboarding.",
+                    "Jungkook được khen về kĩ năng nhảy của cậu bởi một dancer nổi tiếng rằng cậu giỏi như Kyle Hanagami (nhảy chính đứng thứ 3 của nhóm, sau J-Hope thứ nhất và Jimin thứ hai).",
+                    "Jungkook với tư cách là maknae luôn chiếm thời gian lâu nhất trong phòng tắm.",
+                    "Jungkook khi được yêu cầu chọn ra mem thích nhất trong nhóm, cả Jimin và J-Hope đều làm kí hiệu tự chỉ vào mình, nhưng Jungkook không đưa ra câu trả lời.",
+                    "Giống như Suga, Jungkook nói rằng cậu sẽ hẹn hò với Jin nếu em ấy là con gái."
+                ]
+            }
+        ]
+    },
+    {
+        id:'nhom',
+        srcImg:'src/img/background/nhom.jpg',
+        info:[
+            {
+                title:'Thông tin nhóm nhạc BTS',
+                content:[
+                    'Bangtan Boys còn được gọi là BTS (viết tắt của Bulletproof Boy Scouts). ',
+                    'Tên tiếng Hàn là Bangtan Sonyeondan. ',
+                    'à một nhóm nhạc hip-hop của Hàn Quốc gồm 7 thành viên chính thức ra mắt vào 13/06/2013 do chủ tịch của Big Hit Entertainment là Bang Sihyuk (Bang PD nim) thành lập nên. ',
+                    '“Bangtan” trong tên gọi của nhóm có nghĩa là khả năng chống đạn, có thể hiểu Bangtan Boys là những chàng trai chặn đứng những áp đặt đối với thế hệ trẻ, đồng thời bảo vệ dòng âm nhạc của mình khỏi những định kiến này.'
+
                 ]
             }
         ]
     },
 
     {   id:'jhope',
-        srcImg:'src/img/background/jhope.jpg',
+    srcImg:'src/img/background/jhope.jpg',
     info:[
         {
             title:"Thông tin cá nhân: J-Hope",
