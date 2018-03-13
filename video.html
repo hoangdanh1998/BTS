@@ -5,6 +5,8 @@
     <title></title>
     <link rel="icon" href="src/logo/logo.png">
     <!-- //Nav-bar -->
+    <link rel="stylesheet" href="src/css/backtotop.css">
+    <script type="text/javascript" src="src/js/backtotop.js">      </script>
     <link rel="stylesheet" href="src/css/nav-bar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -46,9 +48,11 @@
             position: static;
         }
     }
+
     </style>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="nav-bar navbar-fixed-top">
         <nav class="navbar navbar-default" style="margin:0px;">
             <div class="container-fluid">
@@ -247,6 +251,9 @@
         parentDIV.appendChild(mySpan);
         parentDIV.appendChild(myChildDiv);
     }
+    window.onscroll = function() {scrollFunction()};
+
+
     </script>
 </body>
 </html>

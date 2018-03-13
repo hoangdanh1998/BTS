@@ -262,7 +262,7 @@ var info = [
                 content:[
                     'Bangtan Boys còn được gọi là BTS (viết tắt của Bulletproof Boy Scouts). ',
                     'Tên tiếng Hàn là Bangtan Sonyeondan. ',
-                    'à một nhóm nhạc hip-hop của Hàn Quốc gồm 7 thành viên chính thức ra mắt vào 13/06/2013 do chủ tịch của Big Hit Entertainment là Bang Sihyuk (Bang PD nim) thành lập nên. ',
+                    'Là một nhóm nhạc hip-hop của Hàn Quốc gồm 7 thành viên chính thức ra mắt vào 13/06/2013 do chủ tịch của Big Hit Entertainment là Bang Sihyuk (Bang PD nim) thành lập nên. ',
                     '“Bangtan” trong tên gọi của nhóm có nghĩa là khả năng chống đạn, có thể hiểu Bangtan Boys là những chàng trai chặn đứng những áp đặt đối với thế hệ trẻ, đồng thời bảo vệ dòng âm nhạc của mình khỏi những định kiến này.'
 
                 ]
