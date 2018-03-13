@@ -141,7 +141,7 @@ var info = [
     },
     {
         id:'jimin',
-        srcImg:'src/img/background/Jmin.jpg',
+        srcImg:'src/img/background/jimin.jpg',
         info:[
             {
                 title:'Thông tin cá nhân: Jimin',
@@ -181,7 +181,7 @@ var info = [
     },
     {
         id:'rm',
-        srcImg:'src/img/background/RM.jpg',
+        srcImg:'src/img/background/rm.jpg',
         info:[
             {
                 title:'Thông tin cá nhân: RM',
@@ -218,7 +218,7 @@ var info = [
     },
     {
         id:'jungkook',
-        srcImg:'src/img/background/JungKook.jpg',
+        srcImg:'src/img/background/jungkook.jpg',
         info:[
             {
                 title:'Thông tin cá nhân: JungKook',
