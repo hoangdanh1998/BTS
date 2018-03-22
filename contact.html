@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title></title>
@@ -20,6 +20,7 @@
     }
     /*Ô chứa nội dung chính*/
     .container-custom {
+        background: white;
         box-sizing: border-box;
         border: solid 3px rgba(15, 128, 241, 0.3);
         width: 100%;
@@ -51,6 +52,7 @@
     /*Tạo bảng chứa ô input*/
     .container-custom table {
         margin: 10px auto;
+
     }
     .container-custom table tr td {
         text-align: left;
@@ -153,16 +155,19 @@
             <div class="row">
                 <div class="col-lg-12 col-md-8 col-sm-12 col-xs-12 form" style=" padding-top:55px;">
                     <div class="container-custom">
+                        <form class="" action="index.html" method="post">
+
                         <div class="main-content">
                             <h3>Contact Us</h3>
                             <p>Please give us your <b> Email </b> and <b> Phone number</b> so we can notify about BTS's news</p>
                             <br>
+
                             <table>
                                 <tr>
                                     <td>Name</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="username" value=""></td>
+                                    <td><input type="text" name="name" required  autofocus></td>
                                 </tr>
                             </table>
                             <table>
@@ -170,7 +175,7 @@
                                     <td>Email</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="email" value="" autofocus></td>
+                                    <td><input type="text" name="email" required placeholder="example@gmail.com" pattern="[^ @]*@[^ @]*" ></td>
                                 </tr>
                             </table>
                             <table>
@@ -178,13 +183,12 @@
                                     <td>Phone Number</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="text" name="username" value=""></td>
+                                    <td><input type="text" name="phone" required></td>
                                 </tr>
                             </table>
-
-
-                            <button type="submit" class="btn btn-primary btn-block" id="login-button" >Summit</button>
+                            <button type="submit" class="btn btn-primary btn-block" id="login-button">Summit</button>
                         </div>
+                    </form>
                     </div>
                 </div>
             </div>

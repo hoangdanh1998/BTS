@@ -8,9 +8,7 @@
 
     <!-- <link rel="stylesheet" href="src/css/slide-nav.css"> -->
     <link rel="stylesheet" href="src/css/backtotop.css">
-    <script type="text/javascript" scr="src/js/backtotop.js">
-
-    </script>
+    <script type="text/javascript" src="src/js/backtotop.js">      </script>
     <link rel="stylesheet" href="src/css/nav-bar.css">
     <link rel="stylesheet" href="src/css/appear.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -105,6 +103,7 @@
 
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="paper plane outline icon"></i></button>
     <div class="nav-bar navbar-fixed-top">
         <nav class="navbar navbar-default" style="margin:0px;">
             <div class="container-fluid">
@@ -136,17 +135,16 @@
             <div id="mySidenav" class="sidenav" >
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <img src="src/img/background/icon.jpg" style="width:130px; height:130px; left:20px;" alt="">
-                <a href="profile.html">Profile</a>
-
-                <a href="profile.html#suga">Suga</a>
-                <a href="profile.html#jungkook">JungKook</a>
-                <a href="profile.html#v">V</a>
-                <a href="profile.html#jin">Jin</a>
-                <a href="profile.html#rm">Rap Monster</a>
-                <a href="profile.html#jimin">Jimin</a>
-                <a href="profile.html#jhope">J-Hope</a>
+                <a href="profile.html" onclick="closeNav()">Profile</a>
+                <a href="profile.html#suga" onclick="closeNav()">Suga</a>
+                <a href="profile.html#jungkook" onclick="closeNav()">JungKook</a>
+                <a href="profile.html#v" onclick="closeNav()">V</a>
+                <a href="profile.html#jin" onclick="closeNav()">Jin</a>
+                <a href="profile.html#rm" onclick="closeNav()">Rap Monster</a>
+                <a href="profile.html#jimin" onclick="closeNav()">Jimin</a>
+                <a href="profile.html#jhope" onclick="closeNav()">J-Hope</a>
             </div>
-            <div class="noidung" >
+            <div class="noidung">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; List Idol</span>
                 <div class="">
                     <div class="" id="nhom">       </div>
@@ -175,6 +173,7 @@
         document.getElementById("main").style.marginLeft= "0";
         document.body.style.backgroundColor = "white";
     }
+    window.onscroll = function() {scrollFunction()};
 </script>
 
 <script src="src/js/init-info-kpop.js" charset="utf-8"></script>
